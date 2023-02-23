@@ -1,4 +1,5 @@
 if SHIELD_UNI
+
 config ZMK_KEYBOARD_NAME
 	default "uni"
 endif
