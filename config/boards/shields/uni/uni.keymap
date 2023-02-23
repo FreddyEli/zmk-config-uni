@@ -12,6 +12,7 @@
     &kp A    &kp S    &kp D     &kp F     &kp G                                                 &kp H     &kp J     &kp K     &kp L     &kp SEMI &kp SQT
     &kp LSHIFT &kp Z    &kp X    &kp C     &kp V     &mo 1      
             >;
+        };
 
         default_layer {
             bindings = <
