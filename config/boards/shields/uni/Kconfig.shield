@@ -1,0 +1,2 @@
+config SHIELD_UNI
+def_bol $(shields_list_contains, uni)
