@@ -9,14 +9,8 @@
                 
        		alpha1 {
 		bindings = <
-		&kp 1	&kp 2  	&kp 3  &kp 4 		&kp 5  &kp 6  &kp 7  &kp 8
-		&kp 9	&kp 10  &kp 11  &kp 12 		&kp 13  &kp 14  &kp 15  &kp 16
-		>;
-		};
-       		alpha2 {
-		bindings = <
-		&kp V 		&kp W		&kp M	 	&kp F    	        &kp SQT		&kp Z 		&kp Q	 	&kp J
-		&kp P		&kp K 		&kp B 		&kp DOT			&kp X		&kp Y 		&sk LSHIFT 	&none 
+		&kp N1	&kp N2  &kp N3  &kp N4 		&kp N5  &kp N6  &kp N7  &kp N8
+		&kp A	&kp B   &kp C   &kp  D 		&kp  E  &kp F  &kp G  &mo 1
 		>;
 		};
 		
