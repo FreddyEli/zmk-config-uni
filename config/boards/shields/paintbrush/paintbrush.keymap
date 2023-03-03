@@ -148,7 +148,7 @@
        		base {
 		label = "ARDUX";
 		bindings = <
-&kp Q	&W   &kp F  &kp H	&layer_parentheticals_kp LAYER_ID_PARENTHETICALS ARDUX_BASE_A  &kp ARDUX_BASE_R     &kp ARDUX_BASE_T     &layer_numbers_kp LAYER_ID_NUMBERS ARDUX_BASE_S
+&kp Q	&kp W   &kp F  &kp H	&layer_parentheticals_kp LAYER_ID_PARENTHETICALS ARDUX_BASE_A  &kp ARDUX_BASE_R     &kp ARDUX_BASE_T     &layer_numbers_kp LAYER_ID_NUMBERS ARDUX_BASE_S
 &mo Z	&kp X   &kp C   &kp  D	&layer_symbols_kp LAYER_ID_SYMBOLS ARDUX_BASE_E                &kp ARDUX_BASE_Y     &kp ARDUX_BASE_I     &layer_custom_kp LAYER_ID_CUSTOM ARDUX_BASE_O
 		 		
 		>;
