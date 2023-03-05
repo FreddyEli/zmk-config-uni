@@ -19,15 +19,15 @@
 #define ARDUX_BASE_T T
 #define ARDUX_BASE_S S
 #define ARDUX_BASE_E E
-#define ARDUX_BASE_Y Y
+#define ARDUX_BASE_Y N
 #define ARDUX_BASE_I I
 #define ARDUX_BASE_O O
 #define ARDUX_COMBO_N N
 
 
-#define TIMEOUT_COMBO_2 175
-#define TIMEOUT_COMBO_3 175
-#define TIMEOUT_COMBO_4 175
+#define TIME_2 175
+#define TIME_3 175
+#define TIME_4 175
 #define TIMEOUT_LAYER_HOLD 200
 #define TIMEOUT_STICKY_LEADER_KEY 5000
 
@@ -39,16 +39,13 @@
 };
  
 
-// #define LAYER_ID_GLOBAL -1
-#define LAYER_ID_BASE 0
-#define LAYER_ID_NUMBERS 1
-#define LAYER_ID_SYMBOLS 2
-#define LAYER_ID_PARENTHETICALS 3
-#define LAYER_ID_NAVIGATION 4
-#define LAYER_ID_BT_SEL 5
-#define LAYER_ID_CUSTOM 6
-#define LAYER_ID_BIG_SYM 7
-#define LAYER_ID_BIG_FUNCTION 8
+#define L_BA 0
+#define L_NU 1
+#define L_SY 2
+#define L_PA 3
+#define L_NA 4
+#define L_BT 5
+#define L_CU 6
 
 / {
 	combos {
@@ -56,65 +53,66 @@
 		/*****************************************
 		 * 2 key combos
 		 *****************************************/
-		combo_enter      { timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_S KEY_O>; bindings = <&kp ENTER>; };
-		combo_space      { timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_A KEY_E>; bindings = <&kp SPACE>; };
-		combo_escape     { timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_R KEY_Y>; bindings = <&kp ESC>; };
-		combo_control    { timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_E KEY_S>; bindings = <&sk LCTRL>; };
-		combo_gui        { timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_Y KEY_S>; bindings = <&sk LGUI>; };
-		combo_alt        { timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_I KEY_S>; bindings = <&sk LALT>; };
-		combo_backspace  { timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_E KEY_R>; bindings = <&kp BACKSPACE>; };
-		combo_delete     { timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_I KEY_R>; bindings = <&kp DELETE>; };
-		combo_shift_lock { timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_R KEY_Y>; bindings = <&kt LSHFT>; };
+	combo_enter      { timeout-ms = <TIME_2>; key-positions = <KEY_S KEY_O>; bindings = <&kp ENTER>; };
+	combo_spc        { timeout-ms = <TIME_2>; key-positions = <KEY_A KEY_E>; bindings = <&kp SPACE>; };
+	combo_escape     { timeout-ms = <TIME_2>; key-positions = <KEY_R KEY_Y>; bindings = <&kp ESC>; };
+	combo_control    { timeout-ms = <TIME_2>; key-positions = <KEY_E KEY_S>; bindings = <&sk LCTRL>; };
+	combo_gui        { timeout-ms = <TIME_2>; key-positions = <KEY_Y KEY_S>; bindings = <&sk LGUI>; };
+	combo_alt        { timeout-ms = <TIME_2>; key-positions = <KEY_I KEY_S>; bindings = <&sk LALT>; };
+	combo_backspace  { timeout-ms = <TIME_2>; key-positions = <KEY_E KEY_R>; bindings = <&kp BACKSPACE>; };
+	combo_delete     { timeout-ms = <TIME_2>; key-positions = <KEY_I KEY_R>; bindings = <&kp DELETE>; };
+	combo_shift_lock { timeout-ms = <TIME_2>; key-positions = <KEY_R KEY_Y>; bindings = <&kt LSHFT>; };
 
-		combo_b           { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_E KEY_O>; bindings = <&kp B>; };
-		combo_c           { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_E KEY_Y>; bindings = <&kp C>; };
-		combo_n           { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_I KEY_O>; bindings = <&kp ARDUX_COMBO_N>; };
-		combo_f           { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_A KEY_R>; bindings = <&kp F>; };
-		combo_g           { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_R KEY_T>; bindings = <&kp G>; };
-		combo_u           { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_Y KEY_I>; bindings = <&kp U>; };
-		combo_h           { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_E KEY_I>; bindings = <&kp H>; };
-		combo_v           { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_R KEY_S>; bindings = <&kp V>; };
-		combo_j           { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_T KEY_S>; bindings = <&kp J>; };
-		combo_w           { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_A KEY_S>; bindings = <&kp W>; };
-		combo_k           { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_Y KEY_O>; bindings = <&kp K>; };
-		combo_period       { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_A KEY_Y>; bindings = <&kp PERIOD>; };
-		combo_comma       { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_A KEY_I>; bindings = <&kp COMMA>; };
-		combo_slash       { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_A KEY_O>; bindings = <&kp SLASH>; };
-		combo_exclamation { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_T KEY_I>; bindings = <&kp EXCL>; };
-		
-		combo_seven { layers = <LAYER_ID_NUMBERS>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_A KEY_R>; bindings = <&kp N7>; };
-		combo_eight { layers = <LAYER_ID_NUMBERS>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_R KEY_T>; bindings = <&kp N8>; };
-		combo_nine  { layers = <LAYER_ID_NUMBERS>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_E KEY_Y>; bindings = <&kp N9>; };
-		combo_zero  { layers = <LAYER_ID_NUMBERS>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_Y KEY_I>; bindings = <&kp N0>; };
+	combo_b           { layers = <L_BA>; timeout-ms = <TIME_2>; key-positions = <KEY_E KEY_O>; bindings = <&kp B>; };
+	combo_c           { layers = <L_BA>; timeout-ms = <TIME_2>; key-positions = <KEY_E KEY_Y>; bindings = <&kp C>; };
+	combo_y           { layers = <L_BA>; timeout-ms = <TIME_2>; key-positions = <KEY_I KEY_O>; bindings = <&kp Y>; };
+	combo_f           { layers = <L_BA>; timeout-ms = <TIME_2>; key-positions = <KEY_A KEY_R>; bindings = <&kp F>; };
+	combo_g           { layers = <L_BA>; timeout-ms = <TIME_2>; key-positions = <KEY_R KEY_T>; bindings = <&kp G>; };
+	combo_u           { layers = <L_BA>; timeout-ms = <TIME_2>; key-positions = <KEY_Y KEY_I>; bindings = <&kp U>; };
+	combo_h           { layers = <L_BA>; timeout-ms = <TIME_2>; key-positions = <KEY_E KEY_I>; bindings = <&kp H>; };
+	combo_v           { layers = <L_BA>; timeout-ms = <TIME_2>; key-positions = <KEY_R KEY_S>; bindings = <&kp V>; };
+	combo_j           { layers = <L_BA>; timeout-ms = <TIME_2>; key-positions = <KEY_T KEY_S>; bindings = <&kp J>; };
+	combo_w           { layers = <L_BA>; timeout-ms = <TIME_2>; key-positions = <KEY_A KEY_S>; bindings = <&kp W>; };
+	combo_k           { layers = <L_BA>; timeout-ms = <TIME_2>; key-positions = <KEY_Y KEY_O>; bindings = <&kp K>; };
+	combo_period      { layers = <L_BA>; timeout-ms = <TIME_2>; key-positions = <KEY_A KEY_Y>; bindings = <&kp PERIOD>; };
+	combo_comma       { layers = <L_BA>; timeout-ms = <TIME_2>; key-positions = <KEY_A KEY_I>; bindings = <&kp COMMA>; };
+	combo_slash       { layers = <L_BA>; timeout-ms = <TIME_2>; key-positions = <KEY_A KEY_O>; bindings = <&kp SLASH>; };
+	combo_exclamation { layers = <L_BA>; timeout-ms = <TIME_2>; key-positions = <KEY_T KEY_I>; bindings = <&kp EXCL>; };
+	
+	combo_seven { layers = <L_NU>; timeout-ms = <TIME_2>; key-positions = <KEY_A KEY_R>; bindings = <&kp N7>; };
+	combo_eight { layers = <L_NU>; timeout-ms = <TIME_2>; key-positions = <KEY_R KEY_T>; bindings = <&kp N8>; };
+	combo_nine  { layers = <L_NU>; timeout-ms = <TIME_2>; key-positions = <KEY_E KEY_Y>; bindings = <&kp N9>; };
+	combo_zero  { layers = <L_NU>; timeout-ms = <TIME_2>; key-positions = <KEY_Y KEY_I>; bindings = <&kp N0>; };
 
 		/*****************************************
 		 * 3 key combos
 		 *****************************************/
-		combo_esc              { timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_A KEY_R KEY_O>; bindings = <&kp ESC>; };
-		combo_layer_navigation { timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_R KEY_E KEY_I>; bindings = <&tog LAYER_ID_NAVIGATION>; };
+	combo_esc              { timeout-ms = <TIME_3>; key-positions = <KEY_A KEY_R KEY_O>; bindings = <&kp ESC>; };
+	combo_layer_navigation { timeout-ms = <TIME_3>; key-positions = <KEY_R KEY_E KEY_I>; bindings = <&tog LAYER_ID_NAVIGATION>; };
 
-		combo_m            { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_Y KEY_I KEY_O>; bindings = <&kp M>; };
-		combo_d            { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_A KEY_R KEY_T>; bindings = <&kp D>; };
-		combo_p            { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_E KEY_I KEY_O>; bindings = <&kp P>; };
-		combo_q            { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_A KEY_T KEY_S>; bindings = <&kp Q>; };
-		combo_x            { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_R KEY_T KEY_S>; bindings = <&kp X>; };
-		combo_l            { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_E KEY_Y KEY_I>; bindings = <&kp L>; };
-		combo_single_quote { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_A KEY_Y KEY_I>; bindings = <&kp SQT>; };
+	comboi_m           { layers = <L_BA>; timeout-ms = <TIME_3>; key-positions = <KEY_Y KEY_I KEY_O>; bindings = <&kp M>; };
+	combo_d            { layers = <L_BA>; timeout-ms = <TIME_3>; key-positions = <KEY_A KEY_R KEY_T>; bindings = <&kp D>; };
+	combo_p            { layers = <L_BA>; timeout-ms = <TIME_3>; key-positions = <KEY_E KEY_I KEY_O>; bindings = <&kp P>; };
+	combo_q            { layers = <L_BA>; timeout-ms = <TIME_3>; key-positions = <KEY_A KEY_T KEY_S>; bindings = <&kp Q>; };
+	combo_x            { layers = <L_BA>; timeout-ms = <TIME_3>; key-positions = <KEY_R KEY_T KEY_S>; bindings = <&kp X>; };
+	combo_l            { layers = <L_BA>; timeout-ms = <TIME_3>; key-positions = <KEY_E KEY_Y KEY_I>; bindings = <&kp L>; };
+	combo_single_quote { layers = <L_BA>; timeout-ms = <TIME_3>; key-positions = <KEY_A KEY_Y KEY_I>; bindings = <&kp SQT>; };
 		
 		/*****************************************
 		 * 4 key combos
 		 *****************************************/
-		combo_tab             { timeout-ms = <TIMEOUT_COMBO_4>; key-positions = <KEY_A KEY_R KEY_T KEY_O>; bindings = <&kp TAB>; };
-		combo_space           { timeout-ms = <TIMEOUT_COMBO_4>; key-positions = <KEY_E KEY_Y KEY_I KEY_O>; bindings = <&kp SPACE>; };
-		combo_shift           { timeout-ms = <TIMEOUT_COMBO_4>; key-positions = <KEY_E KEY_R KEY_T KEY_S>; bindings = <&sk LSHFT>; };
-		combo_layer_bt_select { timeout-ms = <TIMEOUT_COMBO_4>; key-positions = <KEY_A KEY_E KEY_S KEY_O>; bindings = <&tog LAYER_ID_BT_SEL>; };
-		combo_bt_clr          { timeout-ms = <TIMEOUT_COMBO_4>; key-positions = <KEY_R KEY_Y KEY_T KEY_I>; bindings = <&bt BT_CLR>; };
+		combo_tab             { timeout-ms = <TIME_4>; key-positions = <KEY_A KEY_R KEY_T KEY_O>; bindings = <&kp TAB>; };
+		combo_space           { timeout-ms = <TIME_4>; key-positions = <KEY_E KEY_Y KEY_I KEY_O>; bindings = <&kp SPACE>; };
+		combo_shift           { timeout-ms = <TIME_4>; key-positions = <KEY_E KEY_R KEY_T KEY_S>; bindings = <&sk LSHFT>; };
+		combo_layer_bt_select { timeout-ms = <TIME_4>; key-positions = <KEY_A KEY_E KEY_S KEY_O>; bindings = <&tog LAYER_ID_BT_SEL>; };
+		combo_bt_clr          { timeout-ms = <TIME_4>; key-positions = <KEY_R KEY_Y KEY_T KEY_I>; bindings = <&bt BT_CLR>; };
 
-		combo_z         { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_4>; key-positions = <KEY_A KEY_R KEY_T KEY_S>; bindings = <&kp Z>; };
-		combo_caps_lock { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_4>; key-positions = <KEY_O KEY_I KEY_Y KEY_A>; bindings = <&kp CAPS>; };
+		combo_z         { layers = <L_BA>; timeout-ms = <TIME_4>; key-positions = <KEY_A KEY_R KEY_T KEY_S>; bindings = <&kp Z>; };
+		combo_caps_lock { layers = <L_BA>; timeout-ms = <TIME_4>; key-positions = <KEY_O KEY_I KEY_Y KEY_A>; bindings = <&kp CAPS>; };
 	};
 };
 
+/*
 / {
 	behaviors {
 		layer_base_kp: layer_base_kp { compatible = "zmk,behavior-hold-tap"; label = "layer_base_kp"; 
@@ -137,6 +135,7 @@
 						bindings = <&sk>, <&sk>; };
 	};
 };
+*/
 
 // 	0	1	2	3		4	5	6	7
 //	8	9 	10	11		12 	13	14	15	
@@ -148,9 +147,8 @@
        		base {
 		label = "ARDUX";
 		bindings = <
-&kp Q	&kp W   &kp F  &kp H	&layer_parentheticals_kp LAYER_ID_PARENTHETICALS ARDUX_BASE_A  &kp ARDUX_BASE_R     &kp ARDUX_BASE_T     &layer_numbers_kp LAYER_ID_NUMBERS ARDUX_BASE_S
-&mo Z	&kp X   &kp C   &kp  D	&layer_symbols_kp LAYER_ID_SYMBOLS ARDUX_BASE_E                &kp ARDUX_BASE_Y     &kp ARDUX_BASE_I     &layer_custom_kp LAYER_ID_CUSTOM ARDUX_BASE_O
-		 		
+&kp Q  	    &kp W  &kp F  &kp H		&lt L_PA A  &kp R  &kp T  &lt L_NU S
+&lt L_NA Z  &kp X  &kp C  &kp D		&lt L_SY E  &kp N  &kp N  &lt L_CU O
 		>;
 		};
 		
@@ -186,8 +184,8 @@
 
 		bt {
 		bindings = <
-		&bt BT_PRV	&bt BT_NXT	&trans 		&trans		 	&trans	&trans &bt BT_NXT &bt BT_PRV	
-		&bootloader  	&bt BT_CLR	&trans 		&trans 			&trans 	&trans &bt BT_CLR &bootloader  	
+&bt BT_PRV  &bt BT_NXT	&trans 	&trans		 	&trans	&trans &bt BT_NXT &bt BT_PRV	
+&bootloader &bt BT_CLR	&trans 	&trans 			&trans 	&trans &bt BT_CLR &bootloader  	
 		>;
 		};
 
