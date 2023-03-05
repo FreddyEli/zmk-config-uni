@@ -13,7 +13,8 @@
 #define KEY_I 14
 #define KEY_O 15
 
-#define TIME_2 175
+//#define TIME_2 175
+#define TIME_2 100
 #define TIME_3 175
 #define TIME_4 175
 #define TIMEOUT_LAYER_HOLD 200
@@ -105,6 +106,7 @@
 		 * Right combos
 		 *****************************************/
 	combo_bkspc  { timeout-ms = <TIME_2>; key-positions = <3 11>; bindings = <&kp BACKSPACE>; };
+	combo_accent { timeout-ms = <TIME_2>; key-positions = <3 11>; bindings = <&kp LBKT>; };
 
 
 		/*****************************************
@@ -167,13 +169,15 @@
 		bindings = <
 &kp GRAVE  &kp UNDER  &kp EQUAL  &kp LS(N1)           	&kp EXCL  &kp BSLH  &kp SEMI  &kp GRAVE
 &kp LS(N8) &kp LS(N9) &kp EQUAL  &kp LS(EQUAL)	        &mo L_SY  &kp QMARK &kp MINUS &kp EQUAL
+
 		>;
 		};
 		parentheticals {
 		label = "Paren";
 		bindings = <
-&kp BSLH &kp QMARK  &kp PLUS &kp CARET		&mo L_PA &kp LPAR  &kp RPAR  &kp LBRC
-&kp EXCL &kp AT     &kp HASH &kp MINUS          &kp DOT   &kp LBKT  &kp RBKT  &kp RBRC
+
+&kp BSLH &kp QMARK  &kp PLUS &kp CARET		&mo L_PA &kp EQUALS &kp UNDER  &kp LBRC
+&kp EXCL &kp AT     &kp HASH &kp MINUS          &kp DOT  &kp LBKT   &kp RBKT  &kp RPAR
 		>;
 		};
 		navigation {
