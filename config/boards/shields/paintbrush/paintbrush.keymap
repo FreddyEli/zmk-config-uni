@@ -142,7 +142,7 @@
 		numbers {
 		label = "Number";
 		bindings = <
-&kp N0  &kp N1 &kp N2  &kp N3		&kp N4   &kp N5  &kp N6  &mo LA_NU
+&kp N0  &kp N1 &kp N2  &kp N3		&kp N4   &kp N5  &kp N6  &mo L_NU
 &kp N7  &kp N8 &kp N9  &kp NON_US_BSLH 	&kp RBKT   &kp FSLH &kp LS(RBKT)  &kp LS(N7)
 		>;
 		};
@@ -151,13 +151,13 @@
 		label = "Symbol";
 		bindings = <
 &kp GRAVE  &kp UNDER  &kp EQUAL  &kp LS(N1)           	&kp EXCL  &kp BSLH  &kp SEMI  &kp GRAVE
-&kp LS(N8) &kp LS(N9) &kp EQUAL  &kp LS(EQUAL)	        &mo LA_SY  &kp QMARK &kp MINUS &kp EQUAL
+&kp LS(N8) &kp LS(N9) &kp EQUAL  &kp LS(EQUAL)	        &mo L_SY  &kp QMARK &kp MINUS &kp EQUAL
 		>;
 		};
 		parentheticals {
 		label = "Paren";
 		bindings = <
-&kp BSLH &kp QMARK  &kp PLUS &kp CARET		&mo LA_PA &kp LPAR  &kp RPAR  &kp LBRC
+&kp BSLH &kp QMARK  &kp PLUS &kp CARET		&mo L_PA &kp LPAR  &kp RPAR  &kp LBRC
 &kp EXCL &kp AT     &kp HASH &kp MINUS          &kp DOT   &kp LBKT  &kp RBKT  &kp RBRC
 		>;
 		};
@@ -177,10 +177,10 @@
 		};
 
 		custom {
-			label = "Custom";
-			bindings = <
+		label = "Custom";
+		bindings = <
 &kp C_MUTE &kp INS   &kp C_VOL_UP 	 &none 	   &kp C_MUTE &kp INS   &kp C_VOL_UP  &none
-&sk RSHFT  &kp PSCRN &kp C_VOL_DN 	 &mo LA_CU &sk RSHFT  &kp PSCRN &kp C_VOL_DN  &mo L_CU 
+&sk RSHFT  &kp PSCRN &kp C_VOL_DN 	 &mo L_CU &sk RSHFT  &kp PSCRN &kp C_VOL_DN  &mo L_CU 
 		>;
 		};
 
