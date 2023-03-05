@@ -112,6 +112,7 @@
 	c_b	     { layers = <L_BA>; timeout-ms = <TIME_2>; key-positions = <10 11>; bindings = <&kp B>; };
 	c_v	     { layers = <L_BA>; timeout-ms = <TIME_2>; key-positions = <9 10>; bindings = <&kp V>; };
 	c_h	     { layers = <L_BA>; timeout-ms = <TIME_2>; key-positions = <1 2>; bindings = <&kp H>; };
+	c_w	     { layers = <L_BA>; timeout-ms = <TIME_2>; key-positions = <1 2 3>; bindings = <&kp W>; };
 
 
 		/*****************************************
@@ -156,7 +157,7 @@
        		base {
 		label = "ARDUX";
 		bindings = <
-&kp Q  	    &kp W  &kp F  &kp N		&lt L_PA A  &kp R  &kp T  &lt L_NU S
+&kp Q  	    &kp L  &kp F  &kp N		&lt L_PA A  &kp R  &kp T  &lt L_NU S
 &lt L_NA Z  &kp X  &kp C  &kp D		&lt L_SY E  &kp U  &kp I  &lt L_CU O
 		>;
 		};
