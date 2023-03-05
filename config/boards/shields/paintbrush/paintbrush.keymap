@@ -107,10 +107,10 @@
 		 * Right combos
 		 *****************************************/
 	combo_bkspc  { timeout-ms = <TIME_2>; key-positions = <3  11>; bindings = <&kp BACKSPACE>; };
-	combo_accent { timeout-ms = <TIME_2>; key-positions = <1  9>; bindings = <&kp LBKT>; };
-	c_m	     { timeout-ms = <TIME_2>; key-positions = <2   3>; bindings = <&kp m>; };
-	c_b	     { timeout-ms = <TIME_2>; key-positions = <10 11>; bindings = <&kp b>; };
-	c_v	     { timeout-ms = <TIME_2>; key-positions = <9  10>; bindings = <&kp v>; };
+	combo_accent { layers = <L_BA>; timeout-ms = <TIME_2>; key-positions = <1 9>; bindings = <&kp LBKT>; };
+	c_m	     { layers = <L_BA>; timeout-ms = <TIME_2>; key-positions = <2 3>; bindings = <&kp m>; };
+	c_b	     { layers = <L_BA>; timeout-ms = <TIME_2>; key-positions = <10 11>; bindings = <&kp b>; };
+	c_v	     { layers = <L_BA>; timeout-ms = <TIME_2>; key-positions = <9 10>; bindings = <&kp v>; };
 
 
 		/*****************************************
