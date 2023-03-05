@@ -113,7 +113,8 @@
 	c_v	     { layers = <L_BA>; timeout-ms = <TIME_2>; key-positions = <9 10>; bindings = <&kp V>; };
 	c_h	     { layers = <L_BA>; timeout-ms = <TIME_2>; key-positions = <1 2>; bindings = <&kp H>; };
 	c_w	     { layers = <L_BA>; timeout-ms = <TIME_2>; key-positions = <1 2 3>; bindings = <&kp W>; };
-	c_y	     { layers = <L_BA>; timeout-ms = <TIME_2>; key-positions = <1 3>; bindings = <&kp W>; };
+	co_w	     { layers = <L_BA>; timeout-ms = <TIME_2>; key-positions = <0 3>; bindings = <&kp W>; };
+	c_y	     { layers = <L_BA>; timeout-ms = <TIME_2>; key-positions = <1 3>; bindings = <&kp Y>; };
 
 
 		/*****************************************
@@ -159,7 +160,7 @@
        		base {
 		label = "ARDUX";
 		bindings = <
-&kp Q  	    &kp L  &kp F  &kp N		&lt L_PA A  &kp R  &kp T  &lt L_NU S
+&lt L_NA Q  &kp L  &kp F  &kp N		&lt L_PA A  &kp R  &kp T  &lt L_NU S
 &lt L_NA Z  &kp X  &kp C  &kp D		&lt L_SY E  &kp U  &kp I  &lt L_CU O
 		>;
 		};
