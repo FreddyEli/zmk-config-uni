@@ -111,6 +111,7 @@
 	c_m	     { layers = <L_BA>; timeout-ms = <TIME_2>; key-positions = <2 3>; bindings = <&kp M>; };
 	c_b	     { layers = <L_BA>; timeout-ms = <TIME_2>; key-positions = <10 11>; bindings = <&kp B>; };
 	c_v	     { layers = <L_BA>; timeout-ms = <TIME_2>; key-positions = <9 10>; bindings = <&kp V>; };
+	c_h	     { layers = <L_BA>; timeout-ms = <TIME_2>; key-positions = <1 2>; bindings = <&kp H>; };
 
 
 		/*****************************************
