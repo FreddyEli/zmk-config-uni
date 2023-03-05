@@ -53,7 +53,6 @@
 		/*****************************************
 		 * 2 key combos
 		 *****************************************/
-<<<<<<< HEAD
 	combo_enter      { timeout-ms = <TIME_2>; key-positions = <KEY_S KEY_O>; bindings = <&kp ENTER>; };
 	combo_spc        { timeout-ms = <TIME_2>; key-positions = <KEY_A KEY_E>; bindings = <&kp SPACE>; };
 	combo_escape     { timeout-ms = <TIME_2>; key-positions = <KEY_R KEY_Y>; bindings = <&kp ESC>; };
@@ -63,17 +62,6 @@
 	combo_backspace  { timeout-ms = <TIME_2>; key-positions = <KEY_E KEY_R>; bindings = <&kp BACKSPACE>; };
 	combo_delete     { timeout-ms = <TIME_2>; key-positions = <KEY_I KEY_R>; bindings = <&kp DELETE>; };
 	combo_shift_lock { timeout-ms = <TIME_2>; key-positions = <KEY_R KEY_Y>; bindings = <&kt LSHFT>; };
-=======
-		combo_enter      { timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_S KEY_O>; bindings = <&kp ENTER>; };
-		combo_spc      { timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_A KEY_E>; bindings = <&kp SPACE>; };
-		combo_escape     { timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_R KEY_Y>; bindings = <&kp ESC>; };
-		combo_control    { timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_E KEY_S>; bindings = <&sk LCTRL>; };
-		combo_gui        { timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_Y KEY_S>; bindings = <&sk LGUI>; };
-		combo_alt        { timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_I KEY_S>; bindings = <&sk LALT>; };
-		combo_backspace  { timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_E KEY_R>; bindings = <&kp BACKSPACE>; };
-		combo_delete     { timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_I KEY_R>; bindings = <&kp DELETE>; };
-		combo_shift_lock { timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_R KEY_Y>; bindings = <&kt LSHFT>; };
->>>>>>> 75fd61a24fd1b04818698c9b8acd7fe0a99c1b2b
 
 	combo_b           { layers = <L_BA>; timeout-ms = <TIME_2>; key-positions = <KEY_E KEY_O>; bindings = <&kp B>; };
 	combo_c           { layers = <L_BA>; timeout-ms = <TIME_2>; key-positions = <KEY_E KEY_Y>; bindings = <&kp C>; };
@@ -113,14 +101,14 @@
 		/*****************************************
 		 * 4 key combos
 		 *****************************************/
-		combo_tab             { timeout-ms = <TIME_4>; key-positions = <KEY_A KEY_R KEY_T KEY_O>; bindings = <&kp TAB>; };
-		combo_space           { timeout-ms = <TIME_4>; key-positions = <KEY_E KEY_Y KEY_I KEY_O>; bindings = <&kp SPACE>; };
-		combo_shift           { timeout-ms = <TIME_4>; key-positions = <KEY_E KEY_R KEY_T KEY_S>; bindings = <&sk LSHFT>; };
-		combo_layer_bt_select { timeout-ms = <TIME_4>; key-positions = <KEY_A KEY_E KEY_S KEY_O>; bindings = <&tog LAYER_ID_BT_SEL>; };
-		combo_bt_clr          { timeout-ms = <TIME_4>; key-positions = <KEY_R KEY_Y KEY_T KEY_I>; bindings = <&bt BT_CLR>; };
+	combo_tab             { timeout-ms = <TIME_4>; key-positions = <KEY_A KEY_R KEY_T KEY_O>; bindings = <&kp TAB>; };
+	combo_space           { timeout-ms = <TIME_4>; key-positions = <KEY_E KEY_Y KEY_I KEY_O>; bindings = <&kp SPACE>; };
+	combo_shift           { timeout-ms = <TIME_4>; key-positions = <KEY_E KEY_R KEY_T KEY_S>; bindings = <&sk LSHFT>; };
+	combo_layer_bt_select { timeout-ms = <TIME_4>; key-positions = <KEY_A KEY_E KEY_S KEY_O>; bindings = <&tog LAYER_ID_BT_SEL>; };
+	combo_bt_clr          { timeout-ms = <TIME_4>; key-positions = <KEY_R KEY_Y KEY_T KEY_I>; bindings = <&bt BT_CLR>; };
 
-		combo_z         { layers = <L_BA>; timeout-ms = <TIME_4>; key-positions = <KEY_A KEY_R KEY_T KEY_S>; bindings = <&kp Z>; };
-		combo_caps_lock { layers = <L_BA>; timeout-ms = <TIME_4>; key-positions = <KEY_O KEY_I KEY_Y KEY_A>; bindings = <&kp CAPS>; };
+	combo_z         { layers = <L_BA>; timeout-ms = <TIME_4>; key-positions = <KEY_A KEY_R KEY_T KEY_S>; bindings = <&kp Z>; };
+	combo_caps_lock { layers = <L_BA>; timeout-ms = <TIME_4>; key-positions = <KEY_O KEY_I KEY_Y KEY_A>; bindings = <&kp CAPS>; };
 	};
 };
 
@@ -167,7 +155,7 @@
 		numbers {
 		label = "Number";
 		bindings = <
-&kp N0  &kp N1 &kp N2  &kp N3		&kp N4   &kp N5  &kp N6  &mo LAYER_ID_NUMBERS
+&kp N0  &kp N1 &kp N2  &kp N3		&kp N4   &kp N5  &kp N6  &mo LA_NU
 &kp N7  &kp N8 &kp N9  &kp NON_US_BSLH 	&kp RBKT   &kp FSLH &kp LS(RBKT)  &kp LS(N7)
 		>;
 		};
@@ -176,14 +164,14 @@
 		label = "Symbol";
 		bindings = <
 &kp GRAVE  &kp UNDER  &kp EQUAL  &kp LS(N1)           	&kp EXCL  &kp BSLH  &kp SEMI  &kp GRAVE
-&kp LS(N8) &kp LS(N9) &kp EQUAL  &kp LS(EQUAL)	        &mo LAYER_ID_SYMBOLS  &kp QMARK &kp MINUS &kp EQUAL
+&kp LS(N8) &kp LS(N9) &kp EQUAL  &kp LS(EQUAL)	        &mo LA_SY  &kp QMARK &kp MINUS &kp EQUAL
 		>;
 		};
 		parentheticals {
 		label = "Paren";
 		bindings = <
-&kp BSLH &kp QMARK  &kp PLUS &kp CARET		&mo LAYER_ID_PARENTHETICALS  &kp LPAR  &kp RPAR  &kp LBRC
-&kp EXCL &kp AT     &kp HASH &kp MINUS          &kp DOT  &kp LBKT  &kp RBKT  &kp RBRC
+&kp BSLH &kp QMARK  &kp PLUS &kp CARET		&mo LA_PA &kp LPAR  &kp RPAR  &kp LBRC
+&kp EXCL &kp AT     &kp HASH &kp MINUS          &kp DOT   &kp LBKT  &kp RBKT  &kp RBRC
 		>;
 		};
 		navigation {
@@ -204,8 +192,8 @@
 		custom {
 			label = "Custom";
 			bindings = <
-&kp C_MUTE &kp INS   &kp C_VOL_UP  &none &kp C_MUTE &kp INS   &kp C_VOL_UP  &none
-&sk RSHFT  &kp PSCRN &kp C_VOL_DN  &mo LAYER_ID_CUSTOM &sk RSHFT  &kp PSCRN &kp C_VOL_DN  &mo LAYER_ID_CUSTOM 
+&kp C_MUTE &kp INS   &kp C_VOL_UP 	 &none 	   &kp C_MUTE &kp INS   &kp C_VOL_UP  &none
+&sk RSHFT  &kp PSCRN &kp C_VOL_DN 	 &mo LA_CU &sk RSHFT  &kp PSCRN &kp C_VOL_DN  &mo L_CU 
 		>;
 		};
 
