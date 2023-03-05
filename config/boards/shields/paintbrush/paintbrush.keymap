@@ -38,6 +38,9 @@
 	combos {
 		compatible = "zmk,combos";
 		/*****************************************
+		 * Left//ARDUX combos
+		 *****************************************/
+		/*****************************************
 		 * 2 key combos
 		 *****************************************/
 	combo_enter      { timeout-ms = <TIME_2>; key-positions = <KEY_S KEY_O>; bindings = <&kp ENTER>; };
@@ -102,6 +105,12 @@
 		 * Right combos
 		 *****************************************/
 	combo_bkspc  { timeout-ms = <TIME_2>; key-positions = <3 11>; bindings = <&kp BACKSPACE>; };
+
+
+		/*****************************************
+		 * Left!Right combos
+		 *****************************************/
+
 	};
 };
 
@@ -140,8 +149,8 @@
        		base {
 		label = "ARDUX";
 		bindings = <
-&kp Q  	    &kp W  &kp F  &kp H		&lt L_PA A  &kp R  &kp T  &lt L_NU S
-&lt L_NA Z  &kp X  &kp C  &kp D		&lt L_SY E  &kp N  &kp I  &lt L_CU O
+&kp Q  	    &kp W  &kp F  &kp N		&lt L_PA A  &kp R  &kp T  &lt L_NU S
+&lt L_NA Z  &kp X  &kp C  &kp D		&lt L_SY E  &kp U  &kp I  &lt L_CU O
 		>;
 		};
 		
@@ -186,7 +195,7 @@
 		label = "Custom";
 		bindings = <
 &kp C_MUTE &kp INS   &kp C_VOL_UP 	 &none 	   &kp C_MUTE &kp INS   &kp C_VOL_UP  &none
-&sk RSHFT  &kp PSCRN &kp C_VOL_DN 	 &mo LA_CU &sk RSHFT  &kp PSCRN &kp C_VOL_DN  &mo L_CU 
+&sk RSHFT  &kp PSCRN &kp C_VOL_DN 	 &mo L_CU &sk RSHFT  &kp PSCRN &kp C_VOL_DN  &mo L_CU 
 		>;
 		};
 
