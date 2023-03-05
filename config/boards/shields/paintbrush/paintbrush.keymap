@@ -175,8 +175,7 @@
 		parentheticals {
 		label = "Paren";
 		bindings = <
-
-&kp BSLH &kp QMARK  &kp PLUS &kp CARET		&mo L_PA &kp EQUALS &kp UNDER  &kp LBRC
+&kp BSLH &kp QMARK  &kp PLUS &kp CARET		&mo L_PA &kp EQUAL  &kp UNDER  &kp LBRC
 &kp EXCL &kp AT     &kp HASH &kp MINUS          &kp DOT  &kp LBKT   &kp RBKT  &kp RPAR
 		>;
 		};
