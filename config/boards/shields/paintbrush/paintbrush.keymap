@@ -106,6 +106,7 @@
 		/*****************************************
 		 * Right combos
 		 *****************************************/
+	c_gui        { timeout-ms = <TIME_2>; key-positions = <9 3>; bindings = <&sk LGUI>; };
 	combo_bkspc  { timeout-ms = <TIME_2>; key-positions = <3  11>; bindings = <&kp BACKSPACE>; };
 	combo_accent { layers = <L_BA>; timeout-ms = <TIME_2>; key-positions = <1 9>; bindings = <&kp LBKT>; };
 	c_m	     { layers = <L_BA>; timeout-ms = <TIME_2>; key-positions = <2 3>; bindings = <&kp M>; };
