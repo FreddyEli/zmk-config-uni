@@ -2,7 +2,6 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
-
 // ARTS Row
 #define KEY_A 4
 #define KEY_R 5
@@ -13,17 +12,6 @@
 #define KEY_Y 13
 #define KEY_I 14
 #define KEY_O 15
-
-#define ARDUX_BASE_A A
-#define ARDUX_BASE_R R
-#define ARDUX_BASE_T T
-#define ARDUX_BASE_S S
-#define ARDUX_BASE_E E
-#define ARDUX_BASE_Y N
-#define ARDUX_BASE_I I
-#define ARDUX_BASE_O O
-#define ARDUX_COMBO_N N
-
 
 #define TIME_2 175
 #define TIME_3 175
@@ -38,7 +26,6 @@
 	release-after-ms = <TIMEOUT_STICKY_LEADER_KEY>;
 };
  
-
 #define L_BA 0
 #define L_NU 1
 #define L_SY 2
@@ -88,7 +75,7 @@
 		 * 3 key combos
 		 *****************************************/
 	combo_esc              { timeout-ms = <TIME_3>; key-positions = <KEY_A KEY_R KEY_O>; bindings = <&kp ESC>; };
-	combo_layer_navigation { timeout-ms = <TIME_3>; key-positions = <KEY_R KEY_E KEY_I>; bindings = <&tog LAYER_ID_NAVIGATION>; };
+	combo_layer_navigation { timeout-ms = <TIME_3>; key-positions = <KEY_R KEY_E KEY_I>; bindings = <&tog L_NA>; };
 
 	comboi_m           { layers = <L_BA>; timeout-ms = <TIME_3>; key-positions = <KEY_Y KEY_I KEY_O>; bindings = <&kp M>; };
 	combo_d            { layers = <L_BA>; timeout-ms = <TIME_3>; key-positions = <KEY_A KEY_R KEY_T>; bindings = <&kp D>; };
@@ -104,7 +91,7 @@
 	combo_tab             { timeout-ms = <TIME_4>; key-positions = <KEY_A KEY_R KEY_T KEY_O>; bindings = <&kp TAB>; };
 	combo_space           { timeout-ms = <TIME_4>; key-positions = <KEY_E KEY_Y KEY_I KEY_O>; bindings = <&kp SPACE>; };
 	combo_shift           { timeout-ms = <TIME_4>; key-positions = <KEY_E KEY_R KEY_T KEY_S>; bindings = <&sk LSHFT>; };
-	combo_layer_bt_select { timeout-ms = <TIME_4>; key-positions = <KEY_A KEY_E KEY_S KEY_O>; bindings = <&tog LAYER_ID_BT_SEL>; };
+	combo_layer_bt_select { timeout-ms = <TIME_4>; key-positions = <KEY_A KEY_E KEY_S KEY_O>; bindings = <&tog L_BT>; };
 	combo_bt_clr          { timeout-ms = <TIME_4>; key-positions = <KEY_R KEY_Y KEY_T KEY_I>; bindings = <&bt BT_CLR>; };
 
 	combo_z         { layers = <L_BA>; timeout-ms = <TIME_4>; key-positions = <KEY_A KEY_R KEY_T KEY_S>; bindings = <&kp Z>; };
