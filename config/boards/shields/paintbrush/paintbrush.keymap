@@ -96,6 +96,12 @@
 
 	combo_z         { layers = <L_BA>; timeout-ms = <TIME_4>; key-positions = <KEY_A KEY_R KEY_T KEY_S>; bindings = <&kp Z>; };
 	combo_caps_lock { layers = <L_BA>; timeout-ms = <TIME_4>; key-positions = <KEY_O KEY_I KEY_Y KEY_A>; bindings = <&kp CAPS>; };
+	
+
+		/*****************************************
+		 * Right combos
+		 *****************************************/
+	combo_bkspc  { timeout-ms = <TIME_2>; key-positions = <3 11>; bindings = <&kp BACKSPACE>; };
 	};
 };
 
@@ -135,7 +141,7 @@
 		label = "ARDUX";
 		bindings = <
 &kp Q  	    &kp W  &kp F  &kp H		&lt L_PA A  &kp R  &kp T  &lt L_NU S
-&lt L_NA Z  &kp X  &kp C  &kp D		&lt L_SY E  &kp N  &kp N  &lt L_CU O
+&lt L_NA Z  &kp X  &kp C  &kp D		&lt L_SY E  &kp N  &kp I  &lt L_CU O
 		>;
 		};
 		
@@ -180,7 +186,7 @@
 		label = "Custom";
 		bindings = <
 &kp C_MUTE &kp INS   &kp C_VOL_UP 	 &none 	   &kp C_MUTE &kp INS   &kp C_VOL_UP  &none
-&sk RSHFT  &kp PSCRN &kp C_VOL_DN 	 &mo L_CU &sk RSHFT  &kp PSCRN &kp C_VOL_DN  &mo L_CU 
+&sk RSHFT  &kp PSCRN &kp C_VOL_DN 	 &mo LA_CU &sk RSHFT  &kp PSCRN &kp C_VOL_DN  &mo L_CU 
 		>;
 		};
 
