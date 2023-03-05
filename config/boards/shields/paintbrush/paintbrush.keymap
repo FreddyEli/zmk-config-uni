@@ -97,6 +97,7 @@
 	combo_shift           { timeout-ms = <TIME_4>; key-positions = <KEY_E KEY_R KEY_T KEY_S>; bindings = <&sk LSHFT>; };
 	combo_layer_bt_select { timeout-ms = <TIME_4>; key-positions = <KEY_A KEY_E KEY_S KEY_O>; bindings = <&tog L_BT>; };
 	combo_bt_clr          { timeout-ms = <TIME_4>; key-positions = <KEY_R KEY_Y KEY_T KEY_I>; bindings = <&bt BT_CLR>; };
+	combo_func            { timeout-ms = <TIME_4>; key-positions = <KEY_A KEY_E KEY_T KEY_I>; bindings = <&tog 7>; };
 
 	combo_z         { layers = <L_BA>; timeout-ms = <TIME_4>; key-positions = <KEY_A KEY_R KEY_T KEY_S>; bindings = <&kp Z>; };
 	combo_caps_lock { layers = <L_BA>; timeout-ms = <TIME_4>; key-positions = <KEY_O KEY_I KEY_Y KEY_A>; bindings = <&kp CAPS>; };
@@ -205,5 +206,13 @@
 		>;
 		};
 
+
+		function {
+		label = "func";
+		bindings = <
+&kp F10  &kp F11  &kp F12 &kp F13		                 &kp F1  &kp F2  &kp F3 &kp F4
+&kp F14  &kp F16  &kp F17 &kp F18		                 &kp F5  &kp F7  &kp F8 &kp F9
+		>;
+		};
 	};
 };
