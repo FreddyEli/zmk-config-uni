@@ -14,7 +14,7 @@
 #define KEY_O 15
 
 //#define TIME_2 175
-#define TIME_2 100
+#define TIME_2 75
 #define TIME_3 175
 #define TIME_4 175
 #define TIMEOUT_LAYER_HOLD 200
@@ -107,7 +107,7 @@
 		 * Right combos
 		 *****************************************/
 	c_gui        { timeout-ms = <TIME_2>; key-positions = <9 3>; bindings = <&sk LGUI>; };
-	combo_bkspc  { timeout-ms = <TIME_2>; key-positions = <3  11>; bindings = <&kp BACKSPACE>; };
+	combo_bkspc  { timeout-ms = <TIME_2>; key-positions = <3  11>; bindings = <&kp LC(BACKSPACE)>; };
 	combo_accent { layers = <L_BA>; timeout-ms = <TIME_2>; key-positions = <1 9>; bindings = <&kp LBKT>; };
 	c_m	     { layers = <L_BA>; timeout-ms = <TIME_2>; key-positions = <2 3>; bindings = <&kp M>; };
 	c_b	     { layers = <L_BA>; timeout-ms = <TIME_2>; key-positions = <10 11>; bindings = <&kp B>; };
@@ -163,7 +163,7 @@
 		label = "ARDUX";
 		bindings = <
 &lt L_NA Q  &kp L  &kp F  &kp N		&lt L_PA A  &kp R  &kp T  &lt L_NU S
-&lt L_NA Z  &kp X  &kp C  &kp D		&lt L_SY E  &kp U  &kp I  &lt L_CU O
+&lt L_NA S  &kp X  &kp C  &kp D		&lt L_SY E  &kp U  &kp I  &lt L_CU O
 		>;
 		};
 		
