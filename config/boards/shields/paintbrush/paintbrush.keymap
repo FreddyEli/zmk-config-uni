@@ -44,8 +44,9 @@
 		/*****************************************
 		 * 2 key combos
 		 *****************************************/
-	combo_enter      { timeout-ms = <TIME_2>; key-positions = <KEY_A KEY_E>; bindings = <&kp ENTER>; };
-	combo_spc        { timeout-ms = <TIME_2>; key-positions = <KEY_S KEY_O>; bindings = <&kp SPACE>; };
+
+	combo_enter      { timeout-ms = <TIME_2>; key-positions = <KEY_S KEY_O>; bindings = <&kp ENTER>; };
+	combo_spc        { timeout-ms = <TIME_2>; key-positions = <KEY_A KEY_E>; bindings = <&kp SPACE>; };
 	combo_escape     { timeout-ms = <TIME_2>; key-positions = <KEY_R KEY_Y>; bindings = <&kp ESC>; };
 	combo_control    { timeout-ms = <TIME_2>; key-positions = <KEY_E KEY_S>; bindings = <&sk LCTRL>; };
 	combo_gui        { timeout-ms = <TIME_2>; key-positions = <KEY_Y KEY_S>; bindings = <&sk LGUI>; };
@@ -165,7 +166,7 @@
 		label = "ARDUX";
 		bindings = <
 //qQ@       lLł    fFđ    nN”       aAæ         tr¶    tTŧ    kKĸ
-&lt L_NA Q  &kp L  &kp F  &kp N		&lt L_PA A  &kp R  &kp T  &lt L_NU SPC
+&lt L_NA Q  &kp L  &kp F  &kp N		&lt L_PA A  &kp R  &kp T  &lt L_NU J
 //sSß       xX»    cC¢    dDð       eE€         uU↓    iI→    oOø
 &lt L_NA S  &kp X  &kp C  &kp D		&lt L_SY E  &kp U  &kp I  &lt L_CU O
 		>;
@@ -194,10 +195,10 @@
 		parentheticals {
 		label = "Paren";
 		bindings = <
-//}]      __        ¡¡        &⅝                           ¿          ?          ¨
-&kp BSLH &kp QMARK  &kp PLUS &kp CARET	    	&mo L_PA &kp EQUAL  &kp UNDER  &kp LBRC
-// !!¡     "⅛          #£        '?\            .:·      ´           +         ==°
-&kp EXCL &kp AT     &kp HASH &kp MINUS          &kp DOT  &kp LBKT   &kp RBKT   &kp RPAR
+//}]      __           ¿              {{{[[                          ´          ?          ¨
+&kp BSLH &kp QMARK     &kp UNDER     &kp SQT	    	&mo L_PA &kp LBKT  &kp UNDER  &kp LBRC
+//   (         ¡         #£               }}]]                    .:·      ´      !         )
+&kp LS(N8=) &kp LS(EQUAL) &kp LS(EQUAL) &kp BSLH         &kp DOT  &kp LBKT   &kp EXCL   &kp LS(N9)
 		>;
 		};
 		navigation {
