@@ -50,6 +50,7 @@
 	combo_control    { timeout-ms = <TIME_2>; key-positions = <KEY_E KEY_S>; bindings = <&sk LCTRL>; };
 	combo_gui        { timeout-ms = <TIME_2>; key-positions = <KEY_Y KEY_S>; bindings = <&sk LGUI>; };
 	combo_alt        { timeout-ms = <TIME_2>; key-positions = <KEY_I KEY_S>; bindings = <&sk LALT>; };
+	combo_ralt       { timeout-ms = <TIME_2>; key-positions = <KEY_I KEY_O>; bindings = <&sk RALT>; };
 	combo_backspace  { timeout-ms = <TIME_2>; key-positions = <KEY_E KEY_R>; bindings = <&kp BACKSPACE>; };
 	combo_delete     { timeout-ms = <TIME_2>; key-positions = <KEY_I KEY_R>; bindings = <&kp DELETE>; };
 	combo_shift_lock { timeout-ms = <TIME_2>; key-positions = <KEY_R KEY_Y>; bindings = <&kt LSHFT>; };
@@ -65,7 +66,7 @@
 	combo_j           { layers = <L_BA>; timeout-ms = <TIME_2>; key-positions = <KEY_T KEY_S>; bindings = <&kp J>; };
 	combo_w           { layers = <L_BA>; timeout-ms = <TIME_2>; key-positions = <KEY_A KEY_S>; bindings = <&kp W>; };
 	combo_k           { layers = <L_BA>; timeout-ms = <TIME_2>; key-positions = <KEY_Y KEY_O>; bindings = <&kp K>; };
-	combo_period      { layers = <L_BA>; timeout-ms = <TIME_2>; key-positions = <KEY_A KEY_Y>; bindings = <&kp PERIOD>; };
+	combo_period     { layers = <L_BA>; timeout-ms = <TIME_2>; key-positions = <KEY_A KEY_Y>; bindings = <&kp PERIOD>; };
 	combo_comma       { layers = <L_BA>; timeout-ms = <TIME_2>; key-positions = <KEY_E KEY_T>; bindings = <&kp COMMA>; };
 	combo_slash       { layers = <L_BA>; timeout-ms = <TIME_2>; key-positions = <KEY_A KEY_O>; bindings = <&kp SLASH>; };
 	combo_exclamation { layers = <L_BA>; timeout-ms = <TIME_2>; key-positions = <KEY_T KEY_I>; bindings = <&kp EXCL>; };
@@ -108,14 +109,14 @@
 		 *****************************************/
 	c_gui        { timeout-ms = <TIME_2>; key-positions = <9 3>; bindings = <&sk LGUI>; };
 	combo_bkspc  { timeout-ms = <TIME_2>; key-positions = <3  11>; bindings = <&kp LC(BACKSPACE)>; };
+	combo_dot    { layers = <L_BA>; timeout-ms = <TIME_2>; key-positions = <1 11>; bindings = <&kp PERIOD>; };
 	combo_accent { layers = <L_BA>; timeout-ms = <TIME_2>; key-positions = <1 9>; bindings = <&kp LBKT>; };
 	c_m	     { layers = <L_BA>; timeout-ms = <TIME_2>; key-positions = <2 3>; bindings = <&kp M>; };
 	c_b	     { layers = <L_BA>; timeout-ms = <TIME_2>; key-positions = <10 11>; bindings = <&kp B>; };
 	c_b2	     { layers = <L_BA>; timeout-ms = <TIME_2>; key-positions = <8 11>; bindings = <&kp B>; };
 	c_v	     { layers = <L_BA>; timeout-ms = <TIME_2>; key-positions = <9 10>; bindings = <&kp V>; };
 	c_h	     { layers = <L_BA>; timeout-ms = <TIME_2>; key-positions = <1 2>; bindings = <&kp H>; };
-	c_w	     { layers = <L_BA>; timeout-ms = <TIME_2>; key-positions = <1 2 3>; bindings = <&kp W>; };
-	co_w	     { layers = <L_BA>; timeout-ms = <TIME_2>; key-positions = <0 3>; bindings = <&kp W>; };
+	c_w	     { layers = <L_BA>; timeout-ms = <TIME_2>; key-positions = <0 3>; bindings = <&kp W>; };
 	c_y	     { layers = <L_BA>; timeout-ms = <TIME_2>; key-positions = <1 3>; bindings = <&kp Y>; };
 	c_p	     { layers = <L_BA>; timeout-ms = <TIME_2>; key-positions = <9 11>; bindings = <&kp P>; };
 
@@ -163,7 +164,7 @@
        		base {
 		label = "ARDUX";
 		bindings = <
-&lt L_NA Q  &kp L  &kp F  &kp N		&lt L_PA A  &kp R  &kp T  &lt L_NU S
+&lt L_NA Q  &kp L  &kp F  &kp N		&lt L_PA A  &kp R  &kp T  &lt L_NU K
 &lt L_NA S  &kp X  &kp C  &kp D		&lt L_SY E  &kp U  &kp I  &lt L_CU O
 		>;
 		};
@@ -171,7 +172,7 @@
 		numbers {
 		label = "Number";
 		bindings = <
-&kp RBKT &kp FSLH &kp LS(RBKT) &kp LS(N7)		&kp N1   &kp N2  &kp N3  &mo L_NU
+&kp RBKT &kp FSLH &kp LS(RBKT) &kp LS(N7)		        &kp N1   &kp N2  &kp N3  &mo L_NU
 &kp N7   &kp N8   &kp N9       &kp NON_US_BSLH 	    	&kp N4   &kp N5  &kp N6  &kp DOT
 		>;
 		};
@@ -179,7 +180,9 @@
 		symbols {
 		label = "Symbol";
 		bindings = <
+//|°        ?          ¿          !                      !         }         ñ         |
 &kp GRAVE  &kp UNDER  &kp EQUAL  &kp LS(N1)           	&kp EXCL  &kp BSLH  &kp SEMI  &kp GRAVE
+//(        )          ¿          ¡                                _         '         ¿
 &kp LS(N8) &kp LS(N9) &kp EQUAL  &kp LS(EQUAL)	        &mo L_SY  &kp QMARK &kp MINUS &kp EQUAL
 
 		>;
@@ -187,8 +190,10 @@
 		parentheticals {
 		label = "Paren";
 		bindings = <
-&kp BSLH &kp QMARK  &kp PLUS &kp CARET		&mo L_PA &kp EQUAL  &kp UNDER  &kp LBRC
-&kp EXCL &kp AT     &kp HASH &kp MINUS          &kp DOT  &kp LBKT   &kp RBKT  &kp RPAR
+//}      _          ¡        &                           ¿          ?          ¨
+&kp BSLH &kp QMARK  &kp PLUS &kp CARET	    	&mo L_PA &kp EQUAL  &kp UNDER  &kp LBRC
+// !     "          #        '                  .        ´           +         =
+&kp EXCL &kp AT     &kp HASH &kp MINUS          &kp DOT  &kp LBKT   &kp RBKT   &kp RPAR
 		>;
 		};
 		navigation {
