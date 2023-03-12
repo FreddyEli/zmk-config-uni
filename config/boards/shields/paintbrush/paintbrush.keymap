@@ -198,7 +198,7 @@
 //}]      __           ¿              {{{[[                          ´          ?          ¨
 &kp BSLH &kp QMARK     &kp UNDER     &kp SQT	    	&mo L_PA &kp LBKT  &kp UNDER  &kp LBRC
 //   (         ¡         #£               }}]]                    .:·      ´      !         )
-&kp LS(N8=) &kp LS(EQUAL) &kp LS(EQUAL) &kp BSLH         &kp DOT  &kp LBKT   &kp EXCL   &kp LS(N9)
+&kp LS(N8) &kp LS(EQUAL) &kp LS(EQUAL) &kp BSLH         &kp DOT  &kp LBKT   &kp EXCL   &kp LS(N9)
 		>;
 		};
 		navigation {
