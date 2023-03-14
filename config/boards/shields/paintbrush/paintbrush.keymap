@@ -28,16 +28,6 @@
 	release-after-ms = <TIMEOUT_STICKY_LEADER_KEY>;
 };
  
-/ {
-    behaviors {
-        space_mod: tap_dance_0 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_0";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&lt 7 SPC>, <&kp SPC>;
-        };
-    };
 
 #define L_BA 0
 #define L_NU 1
@@ -142,6 +132,17 @@
 	};
 };
 
+
+/ {
+    behaviors {
+        space_mod: tap_dance_0 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_0";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&lt 7 SPC>, <&kp SPC>;
+        };
+    };
 /*
 / {
 	behaviors {
