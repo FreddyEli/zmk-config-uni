@@ -38,6 +38,16 @@
 #define L_CU 6
 
 / {
+
+    behaviors {
+        space_mod: tap_dance_0 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_0";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&lt 7 SPC>, <&kp SPC>;
+        };
+    };
 	combos {
 		compatible = "zmk,combos";
 		/*****************************************
@@ -131,15 +141,6 @@
 
 	};
 
-    behaviors {
-        space_mod: tap_dance_0 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_0";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&lt 7 SPC>, <&kp SPC>;
-        };
-    };
 
        keymap {
                 compatible = "zmk,keymap";
