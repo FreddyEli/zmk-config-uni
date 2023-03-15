@@ -14,7 +14,7 @@
 #define KEY_O 15
 
 //#define TIME_2 175
-#define TIME_2 75
+#define TIME_2 50
 #define TIME_3 175
 #define TIME_4 175
 #define TIMEOUT_LAYER_HOLD 200
