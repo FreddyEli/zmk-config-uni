@@ -151,10 +151,10 @@
        		base {
 		label = "ARDUX";
 		bindings = <
-//qQ@       lLł    fFđ    nN”       aAæ         tr¶    tTŧ    kKĸ
-&lt L_NA Q  &kp L  &kp F  &kp N		&lt L_PA A  &kp R  &kp T  &lt L_NU J
-//sSß       xX»    cC¢    dDð       eE€         uU↓    iI→    oOø
-&lt L_NA S  &kp X  &kp C  &kp D		&lt L_SY E  &kp U  &kp I  &lt L_CU O
+//qQ@       lLł    fFđ    nN”             aAæ         tr¶    tTŧ    kKĸ
+&lt L_NA Q  &kp L  &kp F  &lt L_NU N	&lt L_PA A  &kp R  &kp T  &lt L_NU J
+//sSß       xX»    cC¢    dDð             eE€         uU↓    iI→    oOø
+&lt L_NA S  &kp X  &kp C  &kp D	       	&lt L_SY E  &kp U  &kp I  &lt L_CU O
 		>;
 		};
 		
