@@ -41,22 +41,14 @@
 
 / {
 
-    behaviors {
-        space_mod: tap_dance_0 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_0";
-            #binding-cells = <0>;
-            tapping-term-ms = <300>;
-            bindings = <&lt L_RA SPACE>, <&mt SPACE SPACE>;
-        };
-        td0: tap_dance_1 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_1";
-            #binding-cells = <0>;
-            tapping-term-ms = <300>;
-            bindings = <&kp N1>, <&kp N2>, <&kp N3>;
-        };
-    };
+//    behaviors {
+//        space_mod: tap_dance_0 {
+//            compatible = "zmk,behavior-tap-dance";
+//            label = "TAP_DANCE_0";
+//            #binding-cells = <0>;
+//            tapping-term-ms = <300>;
+//            bindings = <&lt L_RA SPACE>, <&mt SPACE SPACE>;
+//        };
 
 	combos {
 		compatible = "zmk,combos";
@@ -68,7 +60,7 @@
 		 *****************************************/
 
 	combo_enter      { timeout-ms = <TIME_2>; key-positions = <KEY_S KEY_O>; bindings = <&kp ENTER>; };
-	combo_spc        { timeout-ms = <TIME_2>; key-positions = <KEY_A KEY_E>; bindings = <&space_mod>; };
+	combo_spc        { timeout-ms = <TIME_2>; key-positions = <KEY_A KEY_E>; bindings = <&lt L_RA SPACE>; };
 	combo_escape     { timeout-ms = <TIME_2>; key-positions = <KEY_R KEY_Y>; bindings = <&kp ESC>; };
 	combo_control    { timeout-ms = <TIME_2>; key-positions = <KEY_E KEY_S>; bindings = <&sk LCTRL>; };
 	combo_gui        { timeout-ms = <TIME_2>; key-positions = <KEY_Y KEY_S>; bindings = <&sk LGUI>; };
@@ -142,6 +134,7 @@
 	c_w	     { layers = <L_BA>; timeout-ms = <TIME_2>; key-positions = <0 3>; bindings = <&kp W>; };
 	c_y	     { layers = <L_BA>; timeout-ms = <TIME_2>; key-positions = <1 3>; bindings = <&kp Y>; };
 	c_p	     { layers = <L_BA>; timeout-ms = <TIME_2>; key-positions = <9 11>; bindings = <&kp P>; };
+	c_k	     { layers = <L_BA>; timeout-ms = <TIME_2>; key-positions = <8 10>; bindings = <&kp P>; };
 
 
 		/*****************************************
@@ -159,8 +152,7 @@
 		label = "ARDUX";
 		bindings = <
 //qQ@       lLł    fFđ    nN”       aAæ         tr¶    tTŧ    kKĸ
-//&lt L_NA Q  &kp L  &kp F  &kp N		&lt L_PA A  &kp R  &kp T  &lt L_NU J
-&lt L_NA Q  &kp L  &kp F  &kp N		&lt L_PA A  &kp R  &kp T  &td0
+&lt L_NA Q  &kp L  &kp F  &kp N		&lt L_PA A  &kp R  &kp T  &lt L_NU J
 //sSß       xX»    cC¢    dDð       eE€         uU↓    iI→    oOø
 &lt L_NA S  &kp X  &kp C  &kp D		&lt L_SY E  &kp U  &kp I  &lt L_CU O
 		>;
@@ -180,7 +172,7 @@
 		label = "Symbol";
 		bindings = <
 //|°¬      ??¿        ¿¡         !!¡                    !!¡       }]        ñÑ~      |°¬
-&kp GRAVE  &kp UNDER  &kp EQUAL  &kp LS(N1)           	&kp EXCL  &kp BSLH  &kp SEMI  &kp GRAVE
+&kp GRAVE  &kp EQUAL  &kp UNDER &kp LS(N1)           	&kp EXCL  &kp BSLH  &kp SEMI  &kp GRAVE
 //(™        )±        ¿¡          ¡                               __        '?\       ¿¡
 &kp LS(N8) &kp LS(N9) &kp EQUAL  &kp LS(EQUAL)	        &mo L_SY  &kp QMARK &kp MINUS &kp EQUAL
 
