@@ -182,7 +182,7 @@
 		label = "Paren";
 		bindings = <
 //}]         __           ¿              {{{[[                       ´          ?          ¨
-&kp BSLH   &kp QMARK     &kp EQUAL     &kp SQT	    	&mo L_PA &kp LBKT  &kp UNDER  &kp LBRC
+&kp LS(N2)   &kp QMARK     &kp EQUAL     &kp SQT	    	&mo L_PA &kp LBKT  &kp UNDER  &kp LBRC
 //   (         ¡         #£               }}]]                    .:·      ´      !         )
 &kp LS(N8) &kp LS(EQUAL) &kp LS(EQUAL) &kp BSLH         &kp DOT  &kp LBKT   &kp EXCL   &kp LS(N9)
 		>;
