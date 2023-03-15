@@ -205,8 +205,8 @@
 		custom {
 		label = "Custom";
 		bindings = <
-&kp C_MUTE &kp INS   &kp C_VOL_UP 	 &none 	   &kp C_MUTE &kp INS   &kp C_VOL_UP  &none
-&sk RSHFT  &kp PSCRN &kp C_VOL_DN 	 &mo L_CU &sk RSHFT  &kp PSCRN &kp C_VOL_DN  &mo L_CU 
+&kp C_MUTE &kp INS   &kp C_VOL_UP 	 &kp C_BRI_UP &kp C_PP   &kp C_VOL_UP  &kp C_PREV
+&sk RSHFT  &kp PSCRN &kp C_VOL_DN 	 &kp C_BRI_DN &kp C_NEXT &kp C_VOL_DN  &mo L_CU 
 		>;
 		};
 
