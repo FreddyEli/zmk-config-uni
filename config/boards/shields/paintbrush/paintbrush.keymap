@@ -47,7 +47,7 @@
             label = "TAP_DANCE_0";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&lt L_RA SPACE>, <&kp SPACE>;
+            bindings = <&lt L_RA SPACE>, <&mt SPACE SPACE>;
         };
     };
 
@@ -85,7 +85,7 @@
 	combo_period     { layers = <L_BA>; timeout-ms = <TIME_2>; key-positions = <KEY_A KEY_Y>; bindings = <&kp PERIOD>; };
 	combo_comma       { layers = <L_BA>; timeout-ms = <TIME_2>; key-positions = <KEY_E KEY_T>; bindings = <&kp COMMA>; };
 	combo_slash       { layers = <L_BA>; timeout-ms = <TIME_2>; key-positions = <KEY_A KEY_O>; bindings = <&kp SLASH>; };
-	combo_exclamation { layers = <L_BA>; timeout-ms = <TIME_2>; key-positions = <KEY_T KEY_I>; bindings = <&kp EXCL>; };
+	combo_exclamation { layers = <L_BA>; timeout-ms = <TIME_2>; key-positions = <KEY_T KEY_I>; bindings = <&key_repeat>; };
 	
 	combo_seven { layers = <L_NU>; timeout-ms = <TIME_2>; key-positions = <KEY_A KEY_R>; bindings = <&kp N7>; };
 	combo_eight { layers = <L_NU>; timeout-ms = <TIME_2>; key-positions = <KEY_R KEY_T>; bindings = <&kp N8>; };
