@@ -49,6 +49,13 @@
             tapping-term-ms = <200>;
             bindings = <&lt L_RA SPACE>, <&mt SPACE SPACE>;
         };
+        td0: tap_dance_1 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_1";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp N1>, <&kp N2>, <&kp N3>;
+        };
     };
 
 	combos {
@@ -60,7 +67,7 @@
 		 * 2 key combos
 		 *****************************************/
 
-	combo_enter      { timeout-ms = <TIME_2>; key-positions = <KEY_S KEY_O>; bindings = <&kp ENTER>; };
+	combo_enter      { timeout-ms = <TIME_2>; key-positions = <KEY_S KEY_O>; bindings = <&td0>; };
 	combo_spc        { timeout-ms = <TIME_2>; key-positions = <KEY_A KEY_E>; bindings = <&space_mod>; };
 	combo_escape     { timeout-ms = <TIME_2>; key-positions = <KEY_R KEY_Y>; bindings = <&kp ESC>; };
 	combo_control    { timeout-ms = <TIME_2>; key-positions = <KEY_E KEY_S>; bindings = <&sk LCTRL>; };
@@ -152,7 +159,8 @@
 		label = "ARDUX";
 		bindings = <
 //qQ@       lLł    fFđ    nN”       aAæ         tr¶    tTŧ    kKĸ
-&lt L_NA Q  &kp L  &kp F  &kp N		&lt L_PA A  &kp R  &kp T  &lt L_NU J
+//&lt L_NA Q  &kp L  &kp F  &kp N		&lt L_PA A  &kp R  &kp T  &lt L_NU J
+&lt L_NA Q  &kp L  &kp F  &kp N		&lt L_PA A  &kp R  &kp T  &td0
 //sSß       xX»    cC¢    dDð       eE€         uU↓    iI→    oOø
 &lt L_NA S  &kp X  &kp C  &kp D		&lt L_SY E  &kp U  &kp I  &lt L_CU O
 		>;
